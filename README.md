@@ -78,29 +78,6 @@ columns = modules.json_schema.infer_flattened_columns(rows, "payload")
 # Returns: ["user__name", "user__age", "user__city", "active"]
 ```
 
-### `infer_schema(rows, json_column)`
-
-Generate a JSON schema from JSON data in a specified column.
-
-**Parameters:**
-
-- `rows`: List of dictionaries representing table rows
-- `json_column`: Name of the column containing JSON data
-
-**Returns:** JSON schema as a dictionary
-
-### `extract_flattened_columns(schema, parent="", *, sep="__")`
-
-Extract flattened column names from a JSON schema.
-
-**Parameters:**
-
-- `schema`: JSON schema dictionary
-- `parent`: Parent path prefix (used internally for recursion)
-- `sep`: Separator for nested keys (default: `"__"`)
-
-**Returns:** List of flattened column names as strings
-
 ## Running dbt 🏃
 
 Instead of using the regular `dbt` command, use `dbt-py`:
