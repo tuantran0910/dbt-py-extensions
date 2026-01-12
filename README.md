@@ -76,6 +76,7 @@ rows = [
 # Usage
 columns = modules.json_schema.infer_flattened_columns(rows, "payload")
 # Returns: ["user__name", "user__age", "user__city", "active"]
+```
 
 ### `infer_schema(rows, json_column)`
 
