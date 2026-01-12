@@ -8,7 +8,7 @@ Install both `dbt-py-wrap` and this package in your dbt environment:
 
 ```bash
 uv pip install dbt-py-wrap
-uv pip install git+https://github.com/tuantran0910/dbt-py-extensions@main
+uv pip install git+https://github.com/tuantran0910/dbt-py-extensions@v0.0.1
 ```
 
 ## Configuration 📝
